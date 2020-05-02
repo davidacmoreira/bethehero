@@ -1,0 +1,12 @@
+backend/node_modules/**/*
+backend/npm-debug.log*
+backend/npm-error.log*
+
+frontend/node_modules/**/*
+frontend/npm-debug.log*
+frontend/npm-error.log*
+
+mobile/node_modules/**/*
+mobile/npm-debug.log*
+mobile/npm-error.log*
+mobile/.expo
