@@ -13,7 +13,7 @@ export default function Detail() {
     const route = useRoute();
 
     const item = route.params.item;
-    const message = `hi ${item.name}. im the hero of the case ${item.title}, helping with ${Intl.NumberFormat('US', { style: 'currency', currency: 'USD' }).format(item.value)}.`;
+    const message = `hi ${item.name}. im the hero of the case ${item.title}, helping with ${Intl.NumberFormat('PT', { style: 'currency', currency: 'EUR' }).format(item.value)}.`;
 
     function navigateBack() {
         navigation.goBack();

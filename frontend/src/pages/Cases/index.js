@@ -66,7 +66,7 @@ export default function Cases() {
                         <p>{c.description}</p>
                         
                         <strong>value</strong>
-                        <p>{Intl.NumberFormat('us', { style: 'currency', currency: 'USD' }).format(c.value)}</p>
+                        <p>{Intl.NumberFormat('PT', { style: 'currency', currency: 'EUR' }).format(c.value)}</p>
 
                         <span>
                             <Link to={{ pathname: "/cases/edit", caseProps: c }}>
