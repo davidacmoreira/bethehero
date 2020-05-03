@@ -13,6 +13,7 @@ routes.post('/organizations', OrganizationController.create);
 
 routes.get('/cases', CaseController.index)
 routes.post('/cases', CaseController.create);
+routes.put('/cases/:id', CaseController.update);
 routes.delete('/cases/:id', CaseController.delete);
 
 module.exports = routes;

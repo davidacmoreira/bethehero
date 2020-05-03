@@ -57,7 +57,39 @@ module.exports = {
             }
         }
         else {
-            return response.status(401).send({ message: "no permission" })
+            return response.status(401).send({ message: 'no permission' })
+        }
+    },
+
+    async update(request, response) {
+        const organization_id = request.headers.authorization;
+        const { id } = request.params;
+        const { title, description, value } = request.body;
+
+        const res_case = await connection('cases')
+            .select('organization_id', 'title', 'description', 'value')
+            .where('id', id)
+            .first();
+
+        if (res_case) {
+            if (res_case.organization_id === organization_id) {
+                const body = {
+                    'title': title||res_case.title,
+                    'description': description||res_case.description,
+                    'value': value||res_case.value
+                }
+
+                const res = await connection('cases').update(body).where('id', id);
+                console.log(res);
+
+                return response.json({ 'id': res });
+            }
+            else {
+                return response.status(401).json({ message: 'no permission' });
+            }
+        }
+        else {
+            return response.status(404).send();
         }
     },
 
