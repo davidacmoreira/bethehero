@@ -42,7 +42,7 @@ export default function NewCase() {
                 <section>
                     <img src={logoImg} alt="be the hero" />
                     <h1>register case</h1>
-                    <p>registe case</p>
+                    {/*<p>registe case</p>*/}
                     <Link className="back-link" to="/cases/all">
                         <FiArrowLeft size={16} color="#E02041" />
                         home

@@ -46,7 +46,7 @@ module.exports = {
             const res_case = await connection('cases').select('id').where('title', title).first();
 
             if (res_case) {
-                return response.status(409).send({ message: "case already exists" });
+                return response.status(409).send({ message: 'case already exists' });
             }
             else {
                 const [id] = await connection('cases').insert({
@@ -100,13 +100,13 @@ module.exports = {
         const res_case = await connection('cases').select('organization_id').where('id', id).first();
 
         if (res_case) {
-            if (res_case.organization_id != organization_id) {
-                return response.status(401).json({ message: 'no permission' })
-            }
-            else {
+            if (res_case.organization_id === organization_id) {
                 await connection('cases').where('id', id).delete();
     
                 return response.status(204).send();
+            }
+            else {
+                return response.status(401).json({ message: 'no permission' })
             }
         }
         else {
