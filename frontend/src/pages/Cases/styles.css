@@ -52,17 +52,23 @@
 }
 
 .cases-container ul li {
+    display: grid;
     background: #FFF;
     padding: 24px;
     border-radius: 8px;
     position: relative;
 }
 
-.cases-container ul li button {
+.cases-container ul li span {
     position: absolute;
     right: 24px;
     top: 24px;
+}
+
+.cases-container ul li button {
     border: 0;
+    margin-left: 12px;
+    background: #FFF;
 }
 
 .cases-container ul li button:hover {
