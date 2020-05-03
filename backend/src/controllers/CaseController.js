@@ -80,7 +80,6 @@ module.exports = {
                 }
 
                 const res = await connection('cases').update(body).where('id', id);
-                console.log(res);
 
                 return response.json({ 'id': res });
             }
