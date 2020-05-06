@@ -82,7 +82,7 @@ After scan the *QR code* in your mobile device, and again, with the *Backend* ru
 
 ## Acknowledgments
 
-I developed this project during the [OmniStack Week 11](https://www.github.com/Rocketseat/semana-omnistack-11) (by [Rockeseat](https://www.rocketseat.com.br/) and [Diego Fernandes](https://www.github.com/diego3g)).
+I developed part of this project during the [OmniStack Week 11](https://www.github.com/Rocketseat/semana-omnistack-11) (by [Rockeseat](https://www.rocketseat.com.br/) and [Diego Fernandes](https://www.github.com/diego3g)).
 
 
 ## License
