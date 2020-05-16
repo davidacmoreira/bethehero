@@ -4,7 +4,7 @@ BeTheHero is a platform to help organizations with all kind of problems, by givi
 
 This project was developed using **Node.js** to *Backend*, **React** to *Frontend Web*, and **React Native** to *Frontend Mobile*.
 
-<img src=".github/readme_header.png" width="100%">
+<img src=".github/header.gif" width="100%">
 
 
 ## Prerequirements
