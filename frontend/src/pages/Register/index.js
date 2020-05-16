@@ -35,7 +35,7 @@ export default function Register() {
                 <section>
                     <img src={logoImg} alt="be the hero" />
                     <h1>register</h1>
-                    <p>registe your organization</p>
+                    <p>register your organization</p>
                     <Link className="back-link" to="/">
                         <FiArrowLeft size={16} color="#E02041" />
                         login
