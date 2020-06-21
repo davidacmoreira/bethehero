@@ -1,6 +1,6 @@
 # BeTheHero
 
-BeTheHero is a platform to help organizations with all kind of problems, by giving a finacial contribution for a specific case. The management of the cases can be made in a web interface by each organization, and the search of cases can be made in a mobile interface.
+BeTheHero is a platform to help organizations with all kind of problems, by giving a financial contribution for a specific case. The management of the cases can be made in a web interface by each organization, and the search of cases can be made in a mobile interface.
 
 This project was developed using **Node.js** to *Backend*, **React** to *Frontend Web*, and **React Native** to *Frontend Mobile*.
 
@@ -35,7 +35,7 @@ In case of using **Expo-CLI**, you also need to install [**Expo**](https://www.p
 
 ## Install
 
-The project have tree main directories: `backend`, `web` and `mobile`.
+The project have tree main directories: `backend`, `frontend` and `mobile`.
 
 To install all the packages you need to run `npm install` inside each directory.
 
